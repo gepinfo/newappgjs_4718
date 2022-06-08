@@ -1,0 +1,7 @@
+{
+  "name": "newappgjs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

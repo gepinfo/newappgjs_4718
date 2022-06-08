@@ -1,0 +1,34 @@
+<h2 class="screen-align">Searchupdatetest</h2>
+<div id="template-iksz" class="gjs-row">
+    <div id="template-i1qx" class="gjs-cell">
+        <label id="template-i2m5b" class="label ">
+            <div id="template-itmo7" class="">Name</div>
+        </label>
+        <input id="template-ilnt" [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}"
+        class="input form-control " />
+        <button id="template-iphtk" class="button btn btn-primary ">
+            <div id="template-iedli" class="">Search</div>
+        </button>
+    </div>
+    <div id="template-iny2" class="gjs-cell">
+        <label id="template-ivaks" class="label ">
+            <div id="template-ig0j3" class="">Email</div>
+        </label>
+        <input id="template-ivhw" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"
+        class="input form-control " />
+    </div>
+    <div id="template-ickg" class="gjs-cell">
+        <label id="template-icysh" class="label ">
+            <div id="template-iohtw" class="">Phone</div>
+        </label>
+        <input id="template-i8l9" [(ngModel)]="user.phone" [ngModelOptions]="{standalone: true}"
+        class="input form-control " />
+    </div>
+</div>
+<div name="grid_template-iop2" id="template-iop2">
+    <ag-grid-angular #agGrid style="width: 100%; height: 100%;" id="myGrid"
+    class="ag-theme-balham" [columnDefs]="columnDefs" [pagination]="true" [paginationPageSize]="paginationPageSize"
+    [defaultColDef]="defaultColDef" [rowData]="rowData" [rowSelection]="rowSelection"
+    (gridReady)="onGridReady($event)" domLayout='autoHeight'></ag-grid-angular>
+</div>
+<div id="myGrid" class="ag-theme-alpine "></div>
